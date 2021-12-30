@@ -21,7 +21,8 @@
     "concurrently": "^6.4.0",
     "express": "^4.17.1",
     "mongoose": "^6.1.2",
-    "react-transition-group": "^4.4.2"
+    "react-transition-group": "^4.4.2",
+    "redux-devtools-extension": "^2.13.9"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

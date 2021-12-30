@@ -16,7 +16,7 @@ class App extends Component {
         <div className="App">
           <AppNavBar />
           <Container>
-            <ItemModal></ItemModal>
+            <ItemModal animation={false}></ItemModal>
             <ShoppingList />
           </Container>
         </div>
