@@ -18,36 +18,32 @@ class App extends Component {
   }
 
   render() {
+
     const authstyle = (
       <div className="App" style={{backgroundImage:`url(${background})`} } >
           <AppNavBar />
           <Container>
-            <ItemModal animation={false}></ItemModal>
+            <ItemModal animation={true}></ItemModal>
             <ShoppingList />
           </Container>
+          <h1> {store.getState().auth.token !== null ? 1 : 2 }</h1>
         </div>
     )
-
+ 
     const gueststyle = (
-      <div className="App" style={{backgroundImage:`url(${background})`} } >
+      <div className="App" >
           <AppNavBar />
           <Container>
             <ItemModal animation={false}></ItemModal>
             <ShoppingList />
           </Container>
+          <h1> {store.getState().auth.token !== null ? 1 : 2 }</h1>
         </div>
     )
 
     return (
       <Provider store={store}>
-        { store.getState().auth.isAuthenticated ? authstyle : gueststyle }
-        <div className="App" style={{backgroundImage:`url(${background})`} } >
-          <AppNavBar />
-          <Container>
-            <ItemModal animation={false}></ItemModal>
-            <ShoppingList />
-          </Container>
-        </div>
+        { 1 > 0 ? authstyle : gueststyle }
       </Provider>
     );
   }
