@@ -1,4 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://coryg:coryg1234@mern-cluster.xw8di.mongodb.net/MERN-cluster?retryWrites=true&w=majority",
+    "mongoURI": "mongodb+srv://coryg:honeybunny2023@mern-cluster.xw8di.mongodb.net/?retryWrites=true&w=majority",
     "jwtSecret": "mysecretvalue"
 }
